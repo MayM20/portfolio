@@ -1,25 +1,21 @@
 import React, {Component} from 'react';
-import Data from '../data/data.json';
+import PROJECTS from '../data/projects';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-class ProjectImages extends React.Component{
-    constructor(props){
-        super(props);
-    }
+
+class ProjectImages extends Component{
     render(){
         return(
         <div>
             <section className="project-images">
-            <img src={require('../images/screenshot_qube.png')} className="img-fluid"></img>
+            <img src={require('../images/screenshot_qube.png')} className="img-fluid" alt=""></img>
             </section>
         </div>
         );
     }
 }
 
-class ProjectDescription extends React.Component{
-    constructor(props){
-        super(props);
-    }
+class ProjectDescription extends Component{
     render(){
     return(
         <div>
@@ -57,11 +53,10 @@ class ProjectDescription extends React.Component{
     }
 }
 
-class ProjectHeading extends React.Component{
-    constructor(props){
-        super(props);
-    }
+class ProjectHeading extends Component{
     render(){
+    
+ 
     return(
         <div>
             <section className="project-container-heading">
@@ -76,9 +71,9 @@ class ProjectHeading extends React.Component{
                     )
                   })
                 } */}
-                    <h1>{Data.projectName}</h1>
-                    <p>{Data.typeOfProject}</p>
-                    <a href="#" className="visit-project">Visit Website</a>
+                    <h1>{PROJECTS[0].projectName}</h1>
+                    <p>{PROJECTS[0].typeOfProject}</p>
+                    <a href="#sth" className="visit-project">Visit Website</a>
             </div>
             </section>
         </div>
@@ -86,14 +81,42 @@ class ProjectHeading extends React.Component{
     }
 }
 
-export default class ProjectDetail extends React.Component{
+//THIS COMPONENT IS A CHILD COMPONENT OF HOME COMPONENT
+export default class ProjectDetail extends Component{
     constructor(props) {
         super(props);
+        this.state = {}
       }
+
+//       //Function which is called when the component loads for the first time
+//   componentDidMount() {
+//     this.getProjectDetails(this.props.val)
+//   }
+
+//   //Function which is called whenver the component is updated
+//   componentDidUpdate(prevProps) {
+
+//     //get Project Details only if props has changed
+//     if (this.props.val !== prevProps.val) {
+//       this.getProjectDetails(this.props.val)
+//     }
+//   }
+
+//   //Function to Load the projectdetails data from json.
+//   getProjectDetails(id) {
+//     axios.get('assets/samplejson/customer' + id + '.json').then(response => {
+//       this.setState({projectDetails: response})
+//     })
+//   };
+    
       render(){
+        // if (!this.state.projectDetails)
+        console.log(this.props)
+        const { params } = this.props.match
           return(
               <div>
                   <ProjectHeading/>
+                  <p>{params.id}</p>
                   <ProjectDescription/>
                   <ProjectImages/>
               </div>

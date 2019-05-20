@@ -4,14 +4,7 @@ import Particles from "react-particles-js";
 export default class ParticlesComponent extends Component{
     render(){
     return(
-  <div style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%"
-    }}
-  >
+  <div className="style-particles">
     <Particles
       params={{
         particles: {

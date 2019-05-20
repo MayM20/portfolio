@@ -173,8 +173,14 @@ a.btn.contact-btn i{
     margin-top: 200px;
     text-align: center;
 }
+// .project{
+//     margin-bottom: 100px;
+//     display: inline-block;
+// } previously used
+//NEW USED
 .project{
     margin-bottom: 100px;
+    width: 40%;
 }
 .project.left{
     padding-right: 62px;
@@ -232,14 +238,14 @@ a.btn.contact-btn i{
     opacity: 1;
 }
 .project .image img{
-    width: 100%;
+    // width: 100%;
     transition: filter 0.3s ease;
 }
 .hide{
     top:-500px;
     background-color: red;
 }
-#specialClass{
+.special-class{
     width: 200px;
 }
 .special2{
@@ -319,6 +325,8 @@ a.btn.contact-btn i{
     }
     .project{
         margin-bottom: 80px;
+        width: 100%;
+        height: 50%;
     }
     .project .image{
         min-height: 200px;
@@ -369,4 +377,40 @@ a.btn.contact-btn i{
     // margin-right: 100px;
     margin-bottom: 50px;
     float: left;
+}
+.style-1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.style-particles{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+//NEW ADDED TO ARRANGE DIVS NEXT TO EACH OTHER
+.main-content {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    margin-top: 200px;
+}
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.actor-image {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+.bg-transparent{
+    background-color: white !important;
 }
