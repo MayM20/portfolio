@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class AboutMe extends Component{
     render(){
         return(
-        <div>
+            <React.Fragment>
             <section className="about-me-section" id="about-me">
                 <div className="maylen_picture">
                 <img src={require('../images/maylen_picture.png')} alt=""></img>
@@ -16,7 +16,7 @@ class AboutMe extends Component{
                 </div>
                 </div>
             </section>
-        </div>
+        </React.Fragment>
         );
     }
 }

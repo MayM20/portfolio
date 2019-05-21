@@ -8,14 +8,14 @@ import AboutMe from './AboutMe';
 
 
 const Projects = (props) => {
-    let projects = ProjectList.map((project) => {
+    let projects = ProjectList.map((project, i) => {
       
 
       const differImage = project.projectDisplay.type === "image" ? 'img-fluid' : 'special-class'; 
 
       return (
 
-        <div className="project">
+        <div key={i} className="project">
         <Link to={`/${project.url}`}>
         <div className="image m">
         <div className="hover">
@@ -25,7 +25,7 @@ const Projects = (props) => {
         </div>
         </Link>
        <div className="details">
-       <div key={project.url} className="title">{project.projectName}</div>
+       <div className="title">{project.projectName}</div>
        <div className="description">{project.shortProjectDescription}</div>
        </div>
         </div>
@@ -33,13 +33,13 @@ const Projects = (props) => {
     });
 
     return (
-      <div>
+<React.Fragment>
       <Banner/>
       {/* <section className="portfolio-section">
         <div className="container">
         <div className="row">
         <div className="col-sm-12 col-md-6"> */}
-        <div className="main-content">
+        <div className="main-content" id="portfolio-section">
         <div className="container">
         {projects}
         </div>
@@ -50,7 +50,7 @@ const Projects = (props) => {
         </div>
         </section> */}
         <Footer/>
-        </div>
+        </React.Fragment>
     );
 }
 

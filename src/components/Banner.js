@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Banner extends Component{
     render(){
     return(
     
-    <section className="cover-section">
+    <section className="cover-section" id="banner-section">
     <div className="cover">
     
         <div className="full-description">
@@ -13,8 +14,8 @@ class Banner extends Component{
             <p className="intro-description">I create engaging, purposeful, easy to use and user-friendly websites.
             Checkout some of my work or get in touch.</p>
             <div className="buttons">
-            <a className="work btn" href="#this-portfolio">See work</a>
-            <a className="contact-btn btn" href="#contact-section"><i className="fas fa-envelope"></i>Contact Me</a>
+            <AnchorLink className="work btn" href="#portfolio-section">See work</AnchorLink>
+            <AnchorLink className="contact-btn btn" href="#contact-section"><i className="fas fa-envelope"></i>Contact Me</AnchorLink>
             </div>
             <div className="links">
         <ul>

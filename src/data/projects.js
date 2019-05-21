@@ -1,6 +1,6 @@
 import screenshot_qube from '../images/screenshot_qube.png';
 import living_through from '../images/logo_adv-studio.png';
-import screenshot_todo from '../images/screenshot_todolist1.png';
+// import screenshot_todo from '../images/screenshot_todolist1.png';
 import screenshot_todo2 from '../images/screenshot_todolist3.png';
 const ProjectsList = [
     {

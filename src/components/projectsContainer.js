@@ -7,8 +7,8 @@ import { Route} from 'react-router-dom';
 const ProjectsContainer = (props) => {
     let proUrl = ProjectList.map((project, i) => {
         return (
-          <Route path={`/${project.url}`} render={() => 
-          <Project name={project.projectName} 
+          <Route key={i} path={`/${project.url}`} render={() => 
+          <Project name={project.projectName}
           image={project.projectDisplay} 
           images={project.projectImages} 
           details={project.shortProjectDescription} 

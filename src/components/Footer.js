@@ -5,7 +5,6 @@ export default class Footer extends Component{
         return(
             <section className="bg-keyboard contact-me-section" id="contact-section">
     <div className="">
-    
         <div className="full-description contact">
             <h1 className="name">Let's connect</h1>
             <p className="description">I’m interested in chatting about design, feel free to connect with me on any of the social platforms below.</p>
