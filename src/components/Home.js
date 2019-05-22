@@ -24,7 +24,7 @@
 //         // const typeOfProject = this.props.project.typeOfProject;
 
 //         return(
-            
+
 //         <div className="col-sm-12 col-md-6">
 //             <div className="project left">
 //             {/* <Link to={`/${PROJECTS.id}`} onClick={() => this.setState({selectedProject: PROJECT.id})}></Link> */}
@@ -40,13 +40,13 @@
 //                 </div>
 //             </div>
 //         </div>
-            
+
 //         );
 //     }
 // }
 
 // export class Home extends Component{
-//     render(){   
+//     render(){
 //         return (
 //         <div>
 //             <Banner/>
@@ -67,6 +67,6 @@
 //      </div>
 //         );
 //     }
-    
+
 // }
 // export default Home;

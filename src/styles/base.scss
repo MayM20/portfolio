@@ -1,39 +1,46 @@
-
 @import "./colors.scss";
+
 /*GENERAL*/
 * {
     margin: 0;
     padding: 0;
 }
-  
+
 html,
 body {
-  width: 100%;
-  height: 100%;
-  background-color: $primary-color;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
 }
 
-p, .technologies2 li{
+p,
+.technologies2 li {
     font-family: $body-font;
     font-size: 21px;
     line-height: 1.8;
-    color: #999; 
+    color: #999;
 }
-.logo{
+
+.logo {
     max-width: 100px;
 }
-.navbar{
+
+.navbar {
     font-weight: bold;
 }
-.nav-item{
+
+.nav-item {
     margin: 20px;
 }
-/*HOME STYLES*/
-.bg-keyboard{
-    background: linear-gradient(rgba(70, 82, 214, 0.3), rgba(14, 20, 83, 0.5)), url('../images/keyboard.jpeg');
-}//this needs to go before in order for the background to work that way
 
-.cover, .contact-me-section{
+/*HOME STYLES*/
+//this needs to go before in order for the background to work that way
+.bg-keyboard {
+    background: linear-gradient(rgba(70, 82, 214, 0.3), rgba(14, 20, 83, 0.5)), url('../images/keyboard.jpeg');
+}
+
+.cover,
+.contact-me-section {
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -43,29 +50,36 @@ p, .technologies2 li{
     background-size: cover;
     text-align: center;
 }
+
 //girl standing SVG
-.standing{
+.standing {
     width: 200px;
     float: right;
     margin-top: -10%;
     margin-right: 2%;
 }
+
 /*ABOUT ME MAYLEN SECTION*/
-.about-me-section .maylen_picture{
+.about-me-section .maylen_picture {
     text-align: center;
 }
-.about-me-section .row{
+
+.about-me-section .row {
     max-width: 45em;
     margin: 0 auto;
     width: 100%;
 }
-.maylen_picture, .maylen_description h2{
+
+.maylen_picture,
+.maylen_description h2 {
     padding: 80px 0 50px;
 }
-.maylen_picture img{
+
+.maylen_picture img {
     width: 618px;
 }
-.full-description{
+
+.full-description {
     position: relative;
     transform: translate(0px, -50%);
     top: 50%;
@@ -73,56 +87,68 @@ p, .technologies2 li{
     margin: 0 auto 0;
     z-index: 1;
 }
+
 //inherits and overrides
-.contact{
+.contact {
     @extend .full-description;
     transform: translate(0px, 50%);
 }
 
 /*first banner*/
-.intro-name, .name{
+.intro-name,
+.name {
     margin-top: 5vw;
     font-size: 6.5vw;
     font-family: $header-font;
     font-weight: 700;
 }
 
-.intro-description, .description{
+.intro-description,
+.description {
     font-size: 1.5rem;
     padding: 1.5vh 0 0;
 }
 
-.intro-name, .intro-description{
+.intro-name,
+.intro-description {
     color: $heading-color;
 }
+
 /*second banner*/
-.name, .description{
+.name,
+.description {
     color: $primary-color;
 }
-.buttons{
+
+.buttons {
     padding: 7vh 0 0;
 }
-a.btn{
+
+a.btn {
     font-size: 1.3vw;
     width: 15vw;
     padding: 0.9vw 0;
     display: inline-block;
     font-weight: 700;
     background: #99a3e8;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #fff;
     text-decoration: none;
     margin: 0 4px;
+
+    &.contact-btn {
+        background: white;
+        color: #99a3e8;
+    }
+
+    &.contact-btn i {
+        margin: 5px;
+    }
 }
-a.btn.contact-btn{
-    background: white;
-    color: #99a3e8;
-}
-a.btn.contact-btn i{
-    margin: 5px;
-}
-.cover-section ul, .contact-me-section ul{
+
+.cover-section ul,
+.contact-me-section ul {
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -131,99 +157,133 @@ a.btn.contact-btn i{
     padding: 6.5vh 0 0;
     margin: 0;
 }
-.cover-section ul li, .contact-me-section ul li{
+
+.cover-section ul li,
+.contact-me-section ul li {
     display: inline-block;
     list-style: none;
     padding: 0;
 }
-.cover-section ul li a, .contact-me-section ul li a{
+
+.cover-section ul li a,
+.contact-me-section ul li a {
     padding: 2vw 2.5vw;
     display: inline-block;
     vertical-align: middle;
     box-shadow: 0 0 1px transparent;
     transform: perspective(1px) translateZ(0);
 }
-.cover-section ul li a i{
+
+.cover-section ul li a i {
     color: black;
 }
-.contact-me-section ul li a i{
+
+.contact-me-section ul li a i {
     color: white;
 }
 
-.current{
+.current {
     border-bottom: 2px solid #fff;
 }
+
 /*PORTFOLIO SECTION*/
-.content{
+.content {
     max-width: 900px;
 }
 
-.about-section{
+.about-section {
     width: 100%;
 }
-.intro{
+
+.intro {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.portfolio-section .container{
-    margin-top: 240px;
-}
-.portfolio-section h2{
-    margin-top: 200px;
-    text-align: center;
-}
-// .project{
-//     margin-bottom: 100px;
-//     display: inline-block;
-// } previously used
+// $chartColors: #56c7fa,
+// #f76540,
+// #ffcb05,
+// #62cd9f,
+// #b67baa;
+
+// @for $i from 1 through length($chartColors) {
+//     $chartColors: append($chartColors, darken(nth($chartColors, $i), 25));
+// }
+
+// $chartColorsLength: length($chartColors);
 //NEW USED
-.project{
+.project {
     margin-bottom: 100px;
     width: 40%;
+
+    .image {
+        height: 540px;
+        width: 100%;
+        padding: 30px;
+        background-color: #eee;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 500px;
+
+        // &.m {
+        //     background-color: red;
+
+        //     &:nth-of-type(odd) {
+        //         background-color: green;
+        //     }
+        // }
+
+        // @for $i from 1 through $chartColorsLength {
+        //     //     &:nth-of-type(#{$chartColorsLength}n+#{$i}) {
+        //     //         background-color: nth($chartColors, $i);
+
+        //     //         &:before {
+        //     //             content: '#{nth($chartColors, $i)}'
+        //     //         }
+        //     //     }
+        //     // }
+
+        &img {
+            transition: filter 0.3s ease;
+        }
+
+
+    }
+
 }
-.project.left{
-    padding-right: 62px;
-}
-.project.right{
-    padding-left: 62px;
-}
-.project .image{
-    height: 540px;
-    width: 100%;
-    padding: 30px;
-    background-color: #eee;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    min-height: 500px;
-}
-.project .image.m{
+
+.project .image.m {
     background-color: #ffd3dd;
 }
-.project .image.c{
+
+.project .image.c {
     background-color: #fff9c7;
 }
-.project .image.r{
+
+.project .image.r {
     background-color: #d4eedb;
 }
-.project .image.i{
+
+.project .image.i {
     background-color: #ffcec7;
 }
-.project .image.p{
+
+.project .image.p {
     background-color: #e3eeff;
 }
-.project .image.h{
+
+.project .image.h {
     background-color: #F4F5FC;
 }
 
-.project .image .hover{
+.project .image .hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 10;
     display: flex;
     align-items: center;
@@ -233,43 +293,35 @@ a.btn.contact-btn i{
     font-weight: 700;
     opacity: 0;
     transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
 }
-.project .image:hover .hover{
-    opacity: 1;
-}
-.project .image img{
-    // width: 100%;
-    transition: filter 0.3s ease;
-}
-.hide{
-    top:-500px;
-    background-color: red;
-}
-.special-class{
-    width: 200px;
-}
-.special2{
-    border-radius: 50%;
-    max-width: 200px;
-    height: 200px;
-}
-.project .image:hover{
+
+.project .image:hover {
     overflow: hidden;
+
+    img {
+        filter: blur(30px);
+    }
 }
-.project .image:hover img{
-    filter: blur(30px);
+
+.details {
+    .title {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 40px 0 30px;
+    }
+
+    .description {
+        font-size: 20px;
+        color: #777;
+        line-height: 34px;
+    }
 }
-.details .title{
-    font-size: 30px;
-    font-weight: 500;
-    margin: 40px 0 30px;
-}
-.details .description{
-    font-size: 20px;
-    color: #777;
-    line-height: 34px;
-}
-.project-container-heading{
+
+.project-container-heading {
     height: 500px;
     width: 100vw;
     position: relative;
@@ -278,20 +330,22 @@ a.btn.contact-btn i{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.project-detail-description{
+
+.project-detail-description {
     position: relative;
     transform: translate(0px, -50%);
     top: 60%;
     width: 60vw;
     margin-left: 100px;
-    // margin: 0 auto 0;
     z-index: 1;
+
+    h1 {
+        font-family: $header-font;
+        font-weight: 800;
+    }
 }
-.project-detail-description h1{
-    font-family: $header-font;
-    font-weight: 800;
-}
-.visit-project{
+
+.visit-project {
     width: 100%;
     color: #1c1e24;
     display: block;
@@ -302,75 +356,95 @@ a.btn.contact-btn i{
     background: url('../images/right-arrow.svg') no-repeat right center;
     background-size: 72px 26px;
 }
-.project-container-description .row{
+
+.project-container-description .row {
     margin-left: 100px;
 }
-.brief h4, .result h4, .brief2 h4, .result2 h4, .technologies2 h4{
+
+.brief2 h4,
+.result2 h4,
+.technologies2 h4 {
     font-family: $header-font;
     font-weight: 800;
     margin-bottom: 50px;
 }
-.brief p, .result p, .brief2 p, .result2 p, .technologies2 p, .technologies2 li{
+
+.brief2 p,
+.result2 p,
+.technologies2 p,
+.technologies2 li {
     margin-bottom: 25px;
     font-size: 15px;
     margin-right: 40px;
+    list-style: none;
 
 }
-.technologies2 li{
-    list-style: none;
-}
+
 @media only screen and (max-width: 576px) {
-    .project.left, .project.right{
+
+    .project.left,
+    .project.right {
         padding: 0;
     }
-    .project{
+
+    .project {
         margin-bottom: 80px;
         width: 100%;
         height: 50%;
     }
-    .project .image{
+
+    .project .image {
         min-height: 200px;
         height: 100%;
         padding: 10px;
     }
-    .about-me-section .row{
+
+    .about-me-section .row {
         width: 80%;
         padding: 0;
         max-width: inherit;
     }
-    .maylen_picture img{
+
+    .maylen_picture img {
         width: 100%;
     }
-    .portfolio-section .container{
-        margin: 0;
-    }
-    .maylen_description h2{
+
+    .maylen_description h2 {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .intro-name{
+
+    .intro-name {
         font-size: 10vw;
         margin-top: 10vw;
     }
-    .buttons{
+
+    .buttons {
         padding: 0;
     }
-    a.btn{
+
+    a.btn {
         font-size: 5vw;
         width: 100%;
         padding: 3vw 0;
         margin: 0 auto 3vw;
     }
-    .project-detail-description, .project-details{
-    margin-left: 20px !important;
+
+    .project-detail-description,
+    .project-details {
+        margin-left: 20px !important;
     }
 }
-.project-details{
+
+.project-details {
     width: 100%;
     zoom: 1;
     margin-left: 100px;
 }
-.brief2, .result2, .technologies2{
+
+.brief2,
+.result2,
+.technologies2 {
     width: 100%;
     max-width: 355px;
     margin-right: 50px;
@@ -378,20 +452,19 @@ a.btn.contact-btn i{
     margin-bottom: 50px;
     float: left;
 }
-.style-1{
+
+.special-class {
+    width: 200px;
+}
+
+.style-particles {
     position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
 }
-.style-particles{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-}
+
 //NEW ADDED TO ARRANGE DIVS NEXT TO EACH OTHER
 .main-content {
     max-width: 90%;
@@ -399,6 +472,7 @@ a.btn.contact-btn i{
     padding-bottom: 50px;
     margin-top: 200px;
 }
+
 .container {
     margin: auto;
     display: flex;
