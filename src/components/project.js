@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 const Project = props => {
+  // const { match, location, history } = props;
+  // console.log(location.pathname);
   return (
     <React.Fragment>
       <section className="project-container-heading" id="project-container">
@@ -62,4 +65,4 @@ const Project = props => {
     </React.Fragment>
   );
 };
-export default Project;
+export default withRouter(Project);

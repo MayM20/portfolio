@@ -4,7 +4,7 @@ class AboutMe extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="about-me-section" id="about-me">
+        <section className="about-me-section" id="about-me" name="about-me">
           <div className="maylen_picture">
             <img src={require("../images/maylen_picture.png")} alt="" />
           </div>

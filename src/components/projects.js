@@ -3,7 +3,6 @@ import ProjectList from "../data/projects";
 import { Link } from "react-router-dom";
 import Banner from "./Banner";
 import AboutMe from "./AboutMe";
-import Nav from "./Nav";
 
 const Projects = props => {
   let projects = ProjectList.map((project, i) => {
