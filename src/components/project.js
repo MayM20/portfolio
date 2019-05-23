@@ -4,16 +4,20 @@ import { Link } from "react-router-dom";
 const Project = props => {
   return (
     <React.Fragment>
-      <section className="project-container-heading">
+      <section className="project-container-heading" id="project-container">
         <div className="project-detail-description">
           <div>
             <Link className="back" to="/">
-              BACK
+              <p>Go back to projects</p>
             </Link>
           </div>
           <h1>{props.name}</h1>
           <p>{props.projectType}</p>
-          <a href={props.projectLink} className="visit-project">
+          <a
+            href={props.projectLink}
+            className="visit-project"
+            title={`Visit ${props.name}`}
+          >
             Visit Website
           </a>
         </div>
@@ -33,7 +37,11 @@ const Project = props => {
 
           <div className="technologies2">
             <h4>Technologies used</h4>
-            <p>{props.projectTechs}</p>
+            <ul>
+              {props.projectTechs.map(singleTech => {
+                return <li key={singleTech}>{singleTech}</li>;
+              })}
+            </ul>
           </div>
         </div>
       </section>

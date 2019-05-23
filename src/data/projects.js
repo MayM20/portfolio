@@ -6,6 +6,7 @@ import living_through from "../images/logo_adv-studio.png";
 import screenshot_todo2 from "../images/screenshot_todolist3.png";
 import screenshot_chat from "../images/screenshot_chat.png";
 import screenshot_chat2 from "../images/screenshot_chat2.png";
+import screenshot_todo4 from "../images/screenshot_todolist4.png";
 
 const ProjectsList = [
   {
@@ -26,18 +27,7 @@ const ProjectsList = [
       url: screenshot_qube,
       type: "image"
     },
-    // projectImages: [
-    //   {
-    //     id: 1,
-    //     name: screenshot_qube
-    //   },
-    //   {
-    //     id: 2,
-    //     name: screenshot_qube2
-    //   }
-    // ]
     projectImages: [
-      // src: require("../images/screenshot_qube.png")
       screenshot_qube,
       screenshot_qube2,
       screenshot_qube3,
@@ -73,33 +63,49 @@ const ProjectsList = [
     shortProjectDescription:
       "Is a simple to-do cross platforms application that helps you to get stuff done. Making it easier to monitor your to-dos.",
     longProjectDescription: {
-      projectBrief: "",
-      projectResult: "",
-      projectTechs: ["", "", ""]
+      projectBrief:
+        "No matter how you decide to organize your life, whether you are at school, work, family, meetings, assignments, Productivity Apps, specially To Do List apps, help you organize your life by keeping track and monitoring. <br /> <br />Finding an easy one that does not ask you for too much information is a bit complicated. Maylen 2-DO List helps you to see your activities right away.",
+      projectResult:
+        "No more wasting time on making the list itself, with very simple input to add a new task, establish the status whether or not the activity is completed, the app gives you the opportunity to add a note inside your task. Making it easier to personalise it with extra details. You are able to see it on your phone and also your mobile devices.",
+      projectTechs: ["Gulp", "Typescript", "Pug", "SASS"]
     },
     projectDisplay: {
       url: screenshot_todo2,
       type: "image"
     },
-    projectImages: ["", "", ""]
+    projectImages: [screenshot_todo4]
   },
   {
     projectName: "Living Through",
-    typeOfProject: "Web Design & Development",
+    typeOfProject: "Wep/App Design & Development",
     projectUrl: "https://livingthrough.info/",
     url: "Living-Through",
     shortProjectDescription:
       " The project is developed in the hope of bringing more meanings to life by helping young people having a basic understanding about suicide,  identify the warning signs and how to start a conversation in order to prevent it or even help themselves.",
     longProjectDescription: {
-      projectBrief: "",
-      projectResult: "",
-      projectTechs: ["", "", ""]
+      projectBrief:
+        "The idea of the platform was initially implemented by the fact of suicide being an undoubted reality, currently present in the Australian community. <br /> <br />A group of students who were coursing a Bachelor of IT decided to propose a software that can make a difference in people’s lives, especially in young people since there was no such program that involves training for students. The proposed platform intends to solve: 1- Misconception about suicide 2-Lack of awareness in suicide prevention. 3-Lack of support to those in need.",
+      projectResult:
+        "In order to make it more convenient and accessible for users The app was created using the Hybrid approach. Meaning that by building a single product, the platform can work on many operating systems like iOS, Android and Windows, providing live chat, safety plans and helpful resources to make sure that the users are staying healthy and helping others.",
+      projectTechs: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Typescript",
+        "Ionic",
+        "Firebase"
+      ]
     },
     projectDisplay: {
       url: living_through,
       type: "image"
     },
-    projectImages: ["", "", ""]
+    projectImages: [
+      require("../images/living_1.png"),
+      require("../images/living_2.png"),
+      require("../images/living_4.png"),
+      require("../images/living_3.png")
+    ]
   }
 ];
 

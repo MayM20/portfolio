@@ -34,7 +34,7 @@ p,
 }
 
 /*HOME STYLES*/
-//this needs to go before in order for the background to work that way
+//this needs to go before the contact-me-section in order for the background to work that way
 .bg-keyboard {
     background: linear-gradient(rgba(70, 82, 214, 0.3), rgba(14, 20, 83, 0.5)), url('../images/keyboard.jpeg');
 }
@@ -92,6 +92,7 @@ p,
 .contact {
     @extend .full-description;
     transform: translate(0px, 50%);
+    top: 0;
 }
 
 /*first banner*/
@@ -200,17 +201,6 @@ a.btn {
     margin-bottom: 100px;
 }
 
-// $chartColors: #56c7fa,
-// #f76540,
-// #ffcb05,
-// #62cd9f,
-// #b67baa;
-
-// @for $i from 1 through length($chartColors) {
-//     $chartColors: append($chartColors, darken(nth($chartColors, $i), 25));
-// }
-
-// $chartColorsLength: length($chartColors);
 //NEW USED
 .project {
     margin-bottom: 100px;
@@ -228,24 +218,6 @@ a.btn {
         position: relative;
         min-height: 500px;
 
-        // &.m {
-        //     background-color: red;
-
-        //     &:nth-of-type(odd) {
-        //         background-color: green;
-        //     }
-        // }
-
-        // @for $i from 1 through $chartColorsLength {
-        //     //     &:nth-of-type(#{$chartColorsLength}n+#{$i}) {
-        //     //         background-color: nth($chartColors, $i);
-
-        //     //         &:before {
-        //     //             content: '#{nth($chartColors, $i)}'
-        //     //         }
-        //     //     }
-        //     // }
-
         &img {
             transition: filter 0.3s ease;
         }
@@ -253,30 +225,6 @@ a.btn {
 
     }
 
-}
-
-.project .image.m {
-    background-color: #ffd3dd;
-}
-
-.project .image.c {
-    background-color: #fff9c7;
-}
-
-.project .image.r {
-    background-color: #d4eedb;
-}
-
-.project .image.i {
-    background-color: #ffcec7;
-}
-
-.project .image.p {
-    background-color: #e3eeff;
-}
-
-.project .image.h {
-    background-color: #F4F5FC;
 }
 
 .project .image .hover {
@@ -380,6 +328,10 @@ a.btn {
 
 }
 
+.project-images li {
+    list-style: none;
+}
+
 @media only screen and (max-width: 576px) {
 
     .project.left,
@@ -433,6 +385,17 @@ a.btn {
     .project-detail-description,
     .project-details {
         margin-left: 20px !important;
+    }
+
+    .standing {
+        width: 100px;
+        float: right;
+        margin-top: 100px;
+        margin-right: 2%;
+    }
+
+    .full-description .contact {
+        width: 0;
     }
 }
 

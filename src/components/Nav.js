@@ -45,8 +45,9 @@ export default class Nav extends Component {
       ? "navbar navbar-expand-lg navbar-light bg-transparent fixed-top"
       : "navbar navbar-expand-lg navbar-light bg-light fixed-top";
 
+    if (window.location.pathname === "/Q") return null;
     return (
-      <nav onScroll={this.listenToScroll} className={`${scrolled}`}>
+      <nav onScroll={this.listenToScroll} className={`${scrolled}`} id="nav-t">
         <div className="container-fluid">
           <Link to={"/"} className="navbar-brand">
             <img src={logo} className="logo" alt="logo" />
@@ -70,7 +71,6 @@ export default class Nav extends Component {
                   Portfolio
                 </Link>
               </li>
-              {/* <li className="nav-item"><AnchorLink href="#banner-section" className="nav-link current">Portfolio</AnchorLink></li> */}
               <li className="nav-item">
                 <AnchorLink href="#about-me" className="nav-link">
                   About

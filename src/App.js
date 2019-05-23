@@ -1,24 +1,28 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import ParticlesComponent from "./components/ParticlesComponent";
 import ProjectsContainer from "./components/projectsContainer";
 
 import "./styles/base.scss";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <ParticlesComponent />
-        <Nav />
-        <Switch>
-          {/* <Route exact path='/' component={Home} /> */}
-          <Route
-            path="/"
-            render={() => <ProjectsContainer title="Some Projects" />}
-          />
-        </Switch>
+        <ScrollToTop>
+          <ParticlesComponent />
+          <Nav />
+          <Switch>
+            <Route
+              path="/"
+              render={() => <ProjectsContainer title="Some Projects" />}
+            />
+          </Switch>
+          <Footer />
+        </ScrollToTop>
       </Router>
     );
   }
