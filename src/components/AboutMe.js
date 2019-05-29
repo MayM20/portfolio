@@ -15,18 +15,22 @@ class AboutMe extends Component {
                 websites is truly a passion of mine.
               </h2>
               <p>
-                I am able to work in all phases of the product development
-                cycle. My unique skillset provides me with the ability to not
-                only build a solution from the ground up, but also assess and
-                address challenges with creative problem solving tactics.
+                I have always been interested in knowing the why of things:
+                "What, how and why"- I think that's what you're going to hear
+                from me most of the time. This has led me to complete my
+                Bachelor of IT, where I gained hands-on experience developing
+                websites and mobile applications from backend to frontend,
+                database and computer science.
               </p>
               <p>
-                Generating a well-conceived solution takes continual practice.
-                Although there are both right and wrong answers to a problem,
-                the distinction is not always black and white. Instead, reaching
-                the correct answer equates to moving along a spectrum. How close
-                are you to the correct answer and how do you surpass that
-                qualification with a great solution? That’s my sweet-spot.
+                I discovered that while I combine technology with these
+                questions, I can create interfaces that influence the user to
+                achieve a certain purpose. For me, creating an unforgettable
+                experience in the user is one of them.
+              </p>
+              <p>
+                Currently, I work as a freelancer. Drop me an email for any new
+                opportunities.
               </p>
             </div>
           </div>

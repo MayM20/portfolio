@@ -3,11 +3,10 @@ import React, { Component } from "react";
 export default class Footer extends Component {
   render() {
     return (
-      <section className="bg-keyboard contact-me-section" id="contact-section">
-        {/* <div className=""> */}
-        <div className="full-description contact">
-          <h1 className="name">Let's connect</h1>
-          <p className="description">
+      <section className="contact-me-banner" id="contact-section">
+        <div className="contact">
+          <h1 className="contact-me-title">Let's connect</h1>
+          <p className="subtitle">
             I’m interested in chatting about development, design and new
             projects. Feel free to connect with me on any of the social
             platforms below.
@@ -35,7 +34,6 @@ export default class Footer extends Component {
             </ul>
           </div>
         </div>
-        {/* </div> */}
         <img
           src={require("../images/standing_girl.png")}
           className="standing"

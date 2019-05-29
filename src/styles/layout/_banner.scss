@@ -1,0 +1,30 @@
+.cover {
+    height: 100vh;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    transform: translate(0px, -50%);
+    top: 40%;
+    width: 60vw;
+    margin: 0 12% 0;
+    z-index: 1;
+}
+
+.banner-title {
+    margin-top: 5vw;
+    font-size: 4.5vw;
+    font-family: $header-font;
+    font-weight: 700;
+
+    @include respond(phone) {
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+}
+
+.banner-description {
+    font-size: 1.5rem;
+    padding: 1.5vh 0 0;
+}

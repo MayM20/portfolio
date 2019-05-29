@@ -9,11 +9,9 @@ const Project = props => {
     <React.Fragment>
       <section className="project-container-heading" id="project-container">
         <div className="project-detail-description">
-          <div>
-            <Link className="back" to="/">
-              <p>Go back to projects</p>
-            </Link>
-          </div>
+          <Link className="back" to="/">
+            <p>Go back to projects</p>
+          </Link>
           <h1>{props.name}</h1>
           <p>{props.projectType}</p>
           <a
@@ -28,17 +26,17 @@ const Project = props => {
 
       <section className="project-container-description">
         <div className="project-details">
-          <div className="brief2">
+          <div className="brief">
             <h4>Brief</h4>
             <p dangerouslySetInnerHTML={{ __html: props.projectBrief }} />
           </div>
 
-          <div className="result2">
+          <div className="result">
             <h4>Results</h4>
             <p dangerouslySetInnerHTML={{ __html: props.projectResult }} />
           </div>
 
-          <div className="technologies2">
+          <div className="technologies">
             <h4>Technologies used</h4>
             <ul>
               {props.projectTechs.map(singleTech => {

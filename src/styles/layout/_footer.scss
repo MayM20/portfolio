@@ -1,0 +1,74 @@
+.contact-me-banner {
+    @extend .cover;
+    background: linear-gradient(rgba(70, 82, 214, 0.3), rgba(14, 20, 83, 0.5)), url('../images/keyboard.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    ul {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        text-align: center;
+        padding: 6.5vh 0 0;
+        margin: 0;
+    }
+
+    ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li a {
+        padding: 2vw 2.5vw;
+        display: inline-block;
+        vertical-align: middle;
+        box-shadow: 0 0 1px transparent;
+        transform: perspective(1px) translateZ(0);
+    }
+
+    ul li a i {
+        color: white;
+    }
+}
+
+.contact {
+    @include centerer;
+}
+
+.contact-me-title {
+    @extend .banner-title;
+    font-size: 6.5vw;
+
+    @include respond(phone) {
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+}
+
+.subtitle {
+    padding: 1.5vh 0 0;
+}
+
+.contact-me-title,
+.subtitle {
+    color: $primary-color;
+}
+
+//girl standing SVG
+.standing {
+    position: absolute;
+    width: 15%;
+    right: 10%;
+    bottom: 10%;
+}
+
+.banner-content .contact {
+    @include respond(phone) {
+        width: 0;
+    }
+}

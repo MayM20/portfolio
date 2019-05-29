@@ -18,7 +18,7 @@ const Projects = props => {
             style={{ backgroundColor: alternatingColor[i] }}
             className="image"
           >
-            <div className="hover">Visit Project -></div>
+            <div className="hover">Read more -></div>
             <img
               src={project.projectDisplay.url}
               className={`${differImage}`}
@@ -26,9 +26,11 @@ const Projects = props => {
             />
           </div>
         </Link>
-        <div className="details">
-          <div className="title">{project.projectName}</div>
-          <div className="description">{project.shortProjectDescription}</div>
+        <div className="card-details">
+          <div className="card-title">{project.projectName}</div>
+          <div className="card-description">
+            {project.shortProjectDescription}
+          </div>
         </div>
       </div>
     );

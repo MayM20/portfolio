@@ -1,0 +1,142 @@
+/*PROJECTS*/
+//NEW ADDED TO ARRANGE DIVS NEXT TO EACH OTHER
+.main-content {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    margin-top: 200px;
+
+    @include respond(phone) {
+        margin-top: 0;
+    }
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin-bottom: 100px;
+    width: 40%;
+
+    @include respond(phone) {
+        margin-bottom: 80px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .image {
+        height: 540px;
+        width: 100%;
+        padding: 30px;
+        background-color: #eee;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 500px;
+
+        @include respond(phone) {
+            min-height: 200px;
+            height: 100%;
+            padding: 10px;
+        }
+
+        &img {
+            transition: filter 0.3s ease;
+        }
+
+
+    }
+
+}
+
+.project .image .hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.project .image:hover {
+    overflow: hidden;
+
+    img {
+        filter: blur(30px);
+    }
+}
+
+.card-details {
+    .card-title {
+        font-size: $hover-font;
+        font-weight: 500;
+        margin: 40px 0 30px;
+    }
+
+    .card-description {
+        font-size: $default-font-size;
+        color: $text-color;
+        line-height: $line-height;
+    }
+}
+
+//arranges size phone pictures
+.special-class {
+    width: 200px;
+}
+
+/*ABOUT ME MAYLEN SECTION*/
+.about-me-section .maylen_picture {
+    text-align: center;
+}
+
+.about-me-section .row {
+    max-width: 45em;
+    margin: 0 auto;
+    width: 100%;
+
+    @include respond(phone) {
+        width: 80%;
+        padding: 0;
+        max-width: inherit;
+    }
+}
+
+.maylen_picture,
+.maylen_description h2 {
+    padding: 80px 0 50px;
+
+    @include respond(phone) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.maylen_description {
+    padding-bottom: 100px;
+}
+
+.maylen_picture img {
+    width: 618px;
+
+    @include respond(phone) {
+        width: 100%;
+    }
+}
