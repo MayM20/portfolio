@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectList from "../data/projects";
 import { Link } from "react-router-dom";
-// import Banner from "./Banner";
-// import AboutMe from "./AboutMe";
+import Banner from "./Banner";
+import AboutMe from "./AboutMe";
 
 const Projects = props => {
   let projects = ProjectList.map((project, i) => {
@@ -39,11 +39,11 @@ const Projects = props => {
   return (
     <React.Fragment>
       {/* <Nav /> */}
-      {/* <Banner /> */}
+      <Banner />
       <div className="main-content" id="portfolio-section">
         <div className="container">{projects}</div>
       </div>
-      {/* <AboutMe /> */}
+      <AboutMe />
     </React.Fragment>
   );
 };

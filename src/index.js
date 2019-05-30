@@ -3,9 +3,15 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
+import { BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<App />, document.getElementById("Maylen|Portfolio"));
+ReactDOM.render(
+  <Router basename={process.env.PUBLIC_URL}>
+    <App />
+  </Router>,
+  document.getElementById("MaylenPortfolio")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

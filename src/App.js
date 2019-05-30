@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Banner from "./components/Banner";
-import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import ParticlesComponent from "./components/ParticlesComponent";
 import ProjectsContainer from "./components/projectsContainer";
@@ -11,22 +9,23 @@ import ScrollToTop from "./components/ScrollToTop";
 
 class App extends Component {
   render() {
+    console.log(this.state);
+    console.log("This is the process.env", process.env.PUBLIC_URL);
+    // debugger
     return (
-      <Router basename={process.env.PUBLIC_URL}>
-        <ScrollToTop>
-          <ParticlesComponent />
-          <Nav />
-          <Banner />
-          <Switch>
-            <Route
-              path="/"
-              render={() => <ProjectsContainer title="Some Projects" />}
-            />
-          </Switch>
-          <AboutMe />
-          <Footer />
-        </ScrollToTop>
-      </Router>
+      // <Router basename={process.env.PUBLIC_URL}>
+      <ScrollToTop>
+        <ParticlesComponent />
+        <Nav />
+        <Switch>
+          <Route
+            path="/"
+            render={() => <ProjectsContainer title="Some Projects" />}
+          />
+        </Switch>
+        <Footer />
+      </ScrollToTop>
+      // </Router>
     );
   }
 }
