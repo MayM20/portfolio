@@ -38,7 +38,6 @@ const Projects = props => {
 
   return (
     <React.Fragment>
-      {/* <Nav /> */}
       <Banner />
       <div className="main-content" id="portfolio-section">
         <div className="container">{projects}</div>

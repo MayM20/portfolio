@@ -27,7 +27,7 @@ export default class Footer extends Component {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/MayM20" id="facebook">
+                <a href="https://www.facebook.com/maymedinag" id="facebook">
                   <i className="mr-3 fab fa-facebook-square fa-2x" />
                 </a>
               </li>
