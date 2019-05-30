@@ -80,7 +80,7 @@ const ProjectsList = [
     projectUrl: "https://livingthrough.info/",
     url: "Living-Through",
     shortProjectDescription:
-      " The project is developed in the hope of bringing more meanings to life by helping young people having a basic understanding about suicide,  identify the warning signs and how to start a conversation in order to prevent it or even help themselves.",
+      " The project is developed for people to have a basic understanding about suicide, identify the warning signs and how to start a conversation if worried about someone, in order to prevent it or even help themselves.",
     longProjectDescription: {
       projectBrief:
         "The idea of the platform was initially implemented by the fact of suicide being an undoubted reality, currently present in the Australian community. <br /> <br />A group of students who were coursing a Bachelor of IT decided to propose a software that can make a difference in people’s lives, especially in young people since there was no such program that involves training for students. <br /> <br /> The proposed platform intends to solve: misconception about suicide, lack of awareness in suicide prevention to help others.",

@@ -11,22 +11,22 @@ class AboutMe extends Component {
           <div className="row">
             <div className="maylen_description">
               <h2>
-                Creating engaging, purposeful, easy to use and user-friendly
-                websites is truly a passion of mine.
+                Creating engaging, purposeful and easy to use websites is truly
+                a passion of mine.
               </h2>
               <p>
-                I have always been interested in knowing the why of things:
-                "What, how and why"- I think that's what you're going to hear
-                from me most of the time. This has led me to complete my
+                I have always been interested in knowing the why of things.
+                "What, how and why" (I think that's what you're going to hear
+                from me most of the time.) This has led me to complete my
                 Bachelor of IT, where I gained hands-on experience developing
                 websites and mobile applications from backend to frontend,
                 database and computer science.
               </p>
               <p>
-                I discovered that while I combine technology with these
-                questions, I can create interfaces that influence the user to
-                achieve a certain purpose. For me, creating an unforgettable
-                experience in the user is one of them.
+                I discovered that combining technology with these questions, I
+                can create interfaces that influence the user to achieve a
+                certain purpose. For me, creating engaging experiences in the
+                user is one of them.
               </p>
               <p>
                 Currently, I work as a freelancer. Drop me an email for any new

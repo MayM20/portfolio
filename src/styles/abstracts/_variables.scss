@@ -3,11 +3,11 @@ $primary-color: white;
 $black-color: black;
 $text-color: #777;
 
+@import url("https://fonts.googleapis.com/css?family=Kanit:900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif");
 //FONT type
-$header-font: 'PT Serif',
-serif;
-$body-font: 'Open Sans',
-sans-serif;
+$header-font: "PT Serif", serif;
+$body-font: "Open Sans", sans-serif;
 $line-height: 1.8;
 //FONT size
 $default-font-size: 20px;

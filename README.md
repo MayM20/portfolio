@@ -1,3 +1,3 @@
 # Maylen Portfolio
 
-Portfolio using React.js and SASS. Testing
+Portfolio using React.js and SASS.
